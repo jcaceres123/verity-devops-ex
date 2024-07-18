@@ -45,6 +45,10 @@ pipeline {
               }
           }
       //Code ends for stage Unit Test
-		
+	    stage('Code Coverage') {
+            steps {
+                step([$class: 'JacocoPublisher'])
+            }
+        }	
     }
 }
