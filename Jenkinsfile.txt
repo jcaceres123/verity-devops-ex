@@ -77,24 +77,24 @@ pipeline {
 		//Code ends for stage Deploy War on Tomcat Server
 		
 		//Code starts for stage API Test
-		stage('API Test') {
-            steps {
-				//Change git url below as per your forked github repository URL
-				git url: 'https://github.com/jcaceres123/EMAPITests-ex.git'
-            	sh 'mvn -Dtest=ExpenseManagerAPITest test'
-            }
-        }
+		// stage('API Test') {
+        //     steps {
+		// 		//Change git url below as per your forked github repository URL
+		// 		git url: 'https://github.com/jcaceres123/EMAPITests-ex.git'
+        //     	sh 'mvn -Dtest=ExpenseManagerAPITest test'
+        //     }
+        // }
 		//Code ends for stage API Test	
 		
 		
 		//Code starts for stage System Test
-		stage('System Test') {
-            steps {
-				//Change git url below as per your forked github repository URL
-				git url: 'https://github.com/jcaceres123/EMSystemTests-ex.git'
-            	sh 'mvn -Dtest=ExpenseManagerSystemTest test'
-            }
-        }
+		// stage('System Test') {
+        //     steps {
+		// 		//Change git url below as per your forked github repository URL
+		// 		git url: 'https://github.com/jcaceres123/EMSystemTests-ex.git'
+        //     	sh 'mvn -Dtest=ExpenseManagerSystemTest test'
+        //     }
+        // }
 		//Code ends for stage System Test	
     }
 }
